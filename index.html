@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EtanoLS - Calculadora de Preço</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2><label>Calculadora de Preço</label></h2>
+        <label for="etanol">Preço do Etanol</label>
+        <input id="etanol" placeholder="Informe o preço do etanol" type="number" step="0.01" min="0">
+
+        <label for="gasolina">Preço da Gasolina</label>
+        <input id="gasolina" placeholder="Informe o preço da gasolina" type="number" min="0">
+
+        <button onclick="calcular()">Calcular</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
